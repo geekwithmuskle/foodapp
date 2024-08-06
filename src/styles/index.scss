@@ -132,33 +132,31 @@ body {
 }
 
 @import "./partials/hero-section.scss";
-.section.improve-skills {
+@import "./partials/improv-section.scss";
 
-    .col.img {
-        img {
-            width: 100%;
-        }
+/** QUOTE SECTION **/
+.section.quote {
+    display: block;
+    .quote-col {
+        display: flex;
+    }
+    .quote-text {
+        font-size: 1.3em;
+        line-height: 1.2;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .quote-author {
+        color: var(--text-light);
+        text-align: right;
+        margin-top: 1em;
+    }
+    svg {
+        color: var(--primary-color);
+        font-size: 1.5em;
+        
     }
 
-    .col.typography {
-        padding-left: 1em;
-        .skill-item {
-            border-left: .2em solid var(--primary-color);
-            margin-bottom: .5em;
-            padding: .1em 0 .1em .5em;
-            color: var(--text-light);
-            font-weight: bold;
-            animation: getAnimationDuration(.5s) slideInRight forwards;
-            @for $i from 2 through 7 {
-                &:nth-child(#{$i}){
-                    animation-delay: #{$i * .1}s;
-                }
-            }
-            }
-        .btn {
-            margin-top: 1em;
-        }
-    }
 }
 
 .main {
