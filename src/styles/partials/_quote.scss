@@ -1,0 +1,24 @@
+/** QUOTE SECTION **/
+.section.quote {
+    display: block;
+    .quote-col {
+        display: flex;
+    }
+    .quote-text {
+        font-size: 1.3em;
+        line-height: 1.2;
+        color: var(--text-color);
+        text-align: center;
+    }
+    .quote-author {
+        color: var(--text-light);
+        text-align: right;
+        margin-top: 1em;
+    }
+    svg {
+        color: var(--primary-color);
+        font-size: 1.5em;
+        
+    }
+
+}

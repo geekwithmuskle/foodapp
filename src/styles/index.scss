@@ -85,79 +85,11 @@ body {
     }
 }
 
-.section.hero {
-
-    .typography {
-        padding-right: 1em;
-    }
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.75vw;
-        .custom-image{
-            transform: scale(0.1);
-            opacity: 0;
-            animation: getAnimationDuration(.5s) popOut forwards;
-            border-radius: 3px;
-            overflow: hidden;
-            
-            &:nth-child(2){
-                animation-delay: .1s;
-            }
-            &:nth-child(3){
-                animation-delay: .2s;
-            }
-            &:nth-child(6){
-                animation-delay: .3s;
-            }
-            &:nth-child(9){
-                animation-delay: .4s;
-            }
-            &:nth-child(8){
-                animation-delay: .5s;
-            }
-            &:nth-child(7){
-                animation-delay: .6s;
-            }
-            &:nth-child(4){
-                animation-delay: .7s;
-            }
-            &:nth-child(5){
-                animation-delay: .8s;
-            }
-        
-        }
-
-    }
-}
-
 @import "./partials/hero-section.scss";
 @import "./partials/improv-section.scss";
-
-/** QUOTE SECTION **/
-.section.quote {
-    display: block;
-    .quote-col {
-        display: flex;
-    }
-    .quote-text {
-        font-size: 1.3em;
-        line-height: 1.2;
-        color: var(--text-color);
-        text-align: center;
-    }
-    .quote-author {
-        color: var(--text-light);
-        text-align: right;
-        margin-top: 1em;
-    }
-    svg {
-        color: var(--primary-color);
-        font-size: 1.5em;
-        
-    }
-
-}
+@import "./partials/quote.scss";
+@import "./partials/chiefs.scss";
+@import "./partials/footer.scss";
 
 .main {
     padding-block: 3vw;
@@ -168,6 +100,7 @@ body {
 }
 @import "./partials/navbar";
 @import "./partials/animations";
+
 @media screen and (max-width: 768px) {
     .sidebar-btn {
         display: block;
@@ -175,5 +108,9 @@ body {
 
     .nav-links {
         display: none;
+    }
+
+    .chiefscard {
+        box-shadow: 0 5px 10px var(--shadow-color);
     }
 }

@@ -1,7 +1,9 @@
-import HeroSection from "./components/HeroSection"
-import ImproveSkill from "./components/ImproveSkill"
-import { Navbar } from "./components/Navbar"
-import Quote from "./components/Quote"
+import Chiefs from "./components/Chiefs";
+import HeroSection from "./components/HeroSection";
+import ImproveSkill from "./components/ImproveSkill";
+import { Navbar } from "./components/Navbar";
+import Quote from "./components/Quote";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
         <HeroSection />
         <ImproveSkill />
         <Quote />
+        <Chiefs />
       </div>
+      <Footer />
     </div>
   )
 }
