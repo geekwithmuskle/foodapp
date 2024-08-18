@@ -91,6 +91,32 @@ body {
 @import "./partials/improv-section.scss";
 @import "./partials/quote.scss";
 @import "./partials/chiefs.scss";
+
+.previous-searches {
+    display: block;
+    h2 {
+        color: var(--text-color);
+        font-size: 1.5em;
+        font-weight: 900;
+        margin-bottom: .5em;
+    }
+
+    .previous-searches-container{
+
+        .search-items{
+            background-color: var(--primary-color);
+            display: inline-block;
+            padding: .5em 1em;
+            margin: 0 1em 1em 0;
+            color: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 3px 6px var(--shadow-color);
+            cursor: pointer;
+            animation: getAnimationDuration(.5s) slideInRight forwards; 
+        }
+    }
+}
+
 @import "./partials/footer.scss";
 
 .main {
