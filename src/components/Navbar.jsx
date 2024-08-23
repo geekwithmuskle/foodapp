@@ -37,7 +37,7 @@ function closeSideBar(){
     <>
       <div className="navbar container">
 
-        <a href="#!" className="logo">F<span>oo</span>diesHub</a>
+        <Link to="/" className="logo">F<span>oo</span>diesHub</Link>
 
         <div className="nav-links">
           {links.map(link => (
