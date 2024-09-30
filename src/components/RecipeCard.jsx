@@ -9,9 +9,8 @@ const RecipeCard = ({recipe}) => {
           <img src={recipe.authorImg} className="author-img" alt="" />
 
           <p className="recipe-title">{recipe.title}</p>
-          <p className="recipe-desc">
+          <p className="recipe-desc"> Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
           <a href="" className="view-btn">VIEW RECIPE</a>
-          </p>
         </div>
     </div>
   )

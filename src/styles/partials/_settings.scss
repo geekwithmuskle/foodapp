@@ -19,25 +19,31 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    &.darke {
-        background-color: rgb(29, 29, 29);
-    }
-
-    &.light {
-        background-color: #ffffff;
+        &.light {
+            background-color: #ffffff;
+        }
+        &.dark {
+            background-color: #000000;
+        }
     }
     .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 2.5em;
         width: 2.5em;
         background-color: var(--primary-color);
         border-radius: 50%;
         text-align: center;
         line-height: 2.5em;
+        box-shadow: 0 2px 5px var(--shadow-color);
         svg {
             height: 1.5em;
             width: 1.5em;
         }
     }
-    
+    .btn span {
+        margin-right: .5em;
+        display: inline-block;
+    }
 }
