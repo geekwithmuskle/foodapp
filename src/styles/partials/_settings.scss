@@ -3,14 +3,11 @@
     padding: 1em;
     border-radius: 5px;
     border-left: .5em solid var(--primary-color);
-    background-color: var(--background-color);;
+    background-color: var(--background-light);;
     margin-top: 1em;
     display: flex;
     gap: 1em;
-    h2{
-        font-size: 1.75em;
-        font-weight: 600;
-    }
+    
     .option {
         height: 3.5em;
         width: 3.5em;
@@ -46,4 +43,10 @@
         margin-right: .5em;
         display: inline-block;
     }
+}
+
+.d-block h2{
+    font-size: 1.75em;
+    font-weight: 600;
+    color: var(--text-color);
 }
