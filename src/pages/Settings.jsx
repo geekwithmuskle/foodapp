@@ -123,7 +123,7 @@ const Settings = () => {
     let _settings = {...settings}
     _settings["--animation-speed"] = _speed.value
     setAnimationSpeed(i)
-    setSettnigs(_settings)
+    setSettings(_settings)
   }
   
   return (
